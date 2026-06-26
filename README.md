@@ -1,3 +1,6 @@
+https://orcid.org/my-orcid?orcid=0009-0004-1872-1153
+https://doi.org/10.5281/zenodo.20927284
+------------
 # Angel in Pocket – Full Business Agent with Subscriptions
 
 A full-stack business agent powered by the GRA (Generative Resonance Architecture) stability core, with paid subscription tiers via Stripe.
