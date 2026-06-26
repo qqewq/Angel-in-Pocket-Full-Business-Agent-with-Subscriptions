@@ -1,0 +1,24 @@
+[project]
+name = "angel-in-pocket"
+version = "0.2.0"
+description = "Full business agent with GRA stability core and paid subscriptions"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.23.0",
+    "sqlalchemy>=2.0",
+    "alembic>=1.11",
+    "pydantic>=2.0",
+    "celery>=5.3",
+    "redis>=4.5",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-multipart>=0.0.5",
+    "stripe>=6.0.0",
+    "httpx>=0.24",
+    "python-dotenv>=1.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "httpx>=0.24"]
