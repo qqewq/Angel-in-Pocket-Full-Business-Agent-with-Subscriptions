@@ -1,0 +1,115 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+\usepackage{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\geometry{margin=2.5cm}
+
+\title{Angel-in-Pocket Full Business Agent with Subscriptions\\
+A Self-Correcting AI Business Architecture}
+\author{qqewq}
+\date{\today}
+
+\begin{document}
+\selectlanguage{english}
+\maketitle
+
+\begin{abstract}
+Angel-in-Pocket Full Business Agent with Subscriptions is a backend-first AI business system that transforms a user's idea into a subscription-ready business. The architecture combines multi-agent orchestration, business automation, and a stability layer inspired by GRA-Core to evaluate scenarios, remove inefficient branches, and preserve structural coherence.
+\end{abstract}
+
+\noindent\textbf{Keywords:} AI agents, business automation, subscriptions, stability, orchestration, finance, accounting.
+
+\section{Introduction}
+
+The goal of Angel-in-Pocket is to turn a human vision into an operational business. The user provides an idea, preferences, and constraints, while the Angel agent swarm designs the product, business model, subscriptions, and supporting operations.
+
+The system is organized around a stability backend that detects contradictions and removes ineffective branches. This makes the architecture self-correcting rather than purely generative.
+
+\section{Problem Statement}
+
+Many AI systems can propose ideas, but fewer can maintain a business structure over time. The core challenge is to map a human vision into a profitable and stable operating model.
+
+We represent the transformation as:
+\[
+(V, P, C) \rightarrow B \rightarrow G \rightarrow \Pi,
+\]
+where $V$ is the vision, $P$ is the preference model, $C$ is the constraint set, $B$ is the business canvas, $G$ is the process graph, and $\Pi$ is the resulting operating policy.
+
+\section{Architecture}
+
+The repository can be viewed as four layers:
+\begin{itemize}[leftmargin=1.2cm]
+    \item \textbf{gra\_core}: stability evaluation, contradiction detection, scenario ranking.
+    \item \textbf{angel}: agents for product, marketing, sales, finance, accounting, and risk.
+    \item \textbf{app}: backend services, APIs, and database models.
+    \item \textbf{frontend}: user-facing interface and dashboards.
+\end{itemize}
+
+Each layer contributes to the overall control loop:
+\[
+\text{Observe} \rightarrow \text{Evaluate} \rightarrow \text{Nullify} \rightarrow \text{Rebuild}.
+\]
+
+\section{Subscriptions Model}
+
+The business model emphasizes recurring revenue. A subscription tier can be written as:
+\[
+T_i = \{p_i, b_i, r_i, c_i\},
+\]
+where $p_i$ is price, $b_i$ is billing period, $r_i$ is retention logic, and $c_i$ is churn risk.
+
+The Angel agent evaluates each tier and keeps only those that satisfy profitability and stability constraints.
+
+\section{Finance and Accounting}
+
+To support real-world operation, the system includes finance and accounting scaffolding. The core simplified profit equation is:
+\[
+\Pi = R - O - \tau,
+\]
+where $R$ is revenue, $O$ is operating cost, and $\tau$ is taxes.
+
+This layer can later be extended with cashflow forecasting, charts of accounts, ledger postings, and tax-specific logic.
+
+\section{Stability Principle}
+
+The main principle of the architecture is nullification of unstable branches. A process branch should remain only if its utility exceeds its cost:
+\[
+\text{Keep}(x) \iff U(x) - K(x) > 0.
+\]
+
+The stability layer compares alternative branches and selects the one with the strongest structural coherence.
+
+\section{Use Cases}
+
+The system is suitable for:
+\begin{itemize}[leftmargin=1.2cm]
+    \item subscription-based AI businesses,
+    \item productized service systems,
+    \item business simulation and planning,
+    \item finance-aware agent orchestration,
+    \item risk-controlled startup automation.
+\end{itemize}
+
+\section{Conclusion}
+
+Angel-in-Pocket is not just a planner or chatbot. It is a self-correcting AI business architecture in which the human provides the vision, the Angel agents execute the business logic, and the stability layer preserves coherence over time.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{latex}
+LaTeX Project. \emph{LaTeX -- A document preparation system}. \url{https://www.latex-project.org/}
+
+\bibitem{ctan}
+CTAN. \emph{The Comprehensive TeX Archive Network}. \url{https://ctan.org/}
+
+\end{thebibliography}
+
+\end{document}
